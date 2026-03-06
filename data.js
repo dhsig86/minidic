@@ -1,0 +1,222 @@
+window.diseaseData = [
+    {
+        "id": "epistaxe",
+        "name": "Epistaxe (Hemorragia nasal)",
+        "desc": "A epistaxe é a hemorragia proveniente das fossas nasais, podendo ser anterior (mais comum) ou posterior. Pode ser causada por trauma, ressecamento da mucosa, hipertensão, distúrbios de coagulação, ou uso de anticoagulantes.",
+        "cause": "Traumatismos locais (assoar o nariz com força, manipulação), desvio de septo, rinite, sinusite, tumores nasais, hipertensão arterial, discrasias sanguíneas.",
+        "symptoms": ["Sangramento por uma ou ambas as narinas", "sensação de sangue escorrendo na garganta (epistaxe posterior)", "tontura (se perda significativa de sangue)"],
+        "prevent": "Umidificar o ambiente, evitar trauma nasal, tratar rinite alérgica, controlar a pressão arterial.",
+        "cure_way": ["Compressão nasal", "cauterização química ou elétrica", "tamponamento nasal anterior/posterior", "ligadura arterial em casos graves"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "rinite",
+        "name": "Rinite",
+        "desc": "Inflamação da mucosa nasal, podendo ser alérgica, infecciosa (aguda ou crônica) ou vasomotora. Caracteriza-se por congestão nasal, espirros, coriza e prurido nasal.",
+        "cause": "Alérgenos (pólen, ácaros, pelos de animais), infecções virais ou bacterianas, irritantes químicos, mudanças climáticas.",
+        "symptoms": ["Obstrução nasal", "rinorreia anterior e posterior", "espirros em salva", "prurido nasal e ocular", "hiposmia"],
+        "prevent": "Evitar alérgenos, manter ambiente limpo, usar soro fisiológico para higiene nasal.",
+        "cure_way": ["Anti-histamínicos", "corticosteroides nasais", "descongestionantes (uso limitado)", "imunoterapia (para alérgica)", "lavagem nasal com soro"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "sinusite",
+        "name": "Sinusite",
+        "desc": "Inflamação dos seios paranasais (maxilar, frontal, etmoidal, esfenoidal), geralmente secundária a infecções virais, bacterianas ou fúngicas. Pode ser aguda, subaguda ou crônica.",
+        "cause": "Infecções respiratórias, obstrução dos óstios sinusais (desvio de septo, pólipos), alergias, fatores imunológicos.",
+        "symptoms": ["Dor e pressão facial", "cefaleia", "congestão nasal", "secreção nasal purulenta", "hiposmia", "febre (na aguda)"],
+        "prevent": "Tratar prontamente infecções respiratórias, evitar alérgenos, manter boa hidratação.",
+        "cure_way": ["Antibióticos (se bacteriana)", "corticosteroides nasais", "descongestionantes", "lavagem nasal", "cirurgia (casos crônicos ou complicados)"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "faringite",
+        "name": "Faringite",
+        "desc": "Inflamação da faringe, podendo ser aguda (viral ou bacteriana) ou crônica. É uma das queixas mais comuns em ORL.",
+        "cause": "Infecções virais (rinovírus, adenovírus, influenza), bacterianas (Streptococcus pyogenes), irritantes (fumo, poluição), refluxo gastrofaríngeo.",
+        "symptoms": ["Dor de garganta", "odinofagia", "sensação de arranhado", "febre (na aguda)", "hiperemia da mucosa faríngea"],
+        "prevent": "Evitar irritantes, boa higiene das mãos, vacinação contra influenza e pneumococo.",
+        "cure_way": ["Sintomáticos (analgésicos, anti-inflamatórios)", "antibióticos (se bacteriana)", "gargarejos com soluções anti-sépticas"],
+        "categoryTag": "garganta",
+        "categoryLabel": "Garganta/Faringe"
+    },
+    {
+        "id": "amigdalite",
+        "name": "Amigdalite",
+        "desc": "Inflamação das amígdalas palatinas, geralmente de origem infecciosa (viral ou bacteriana), podendo ser aguda ou crônica.",
+        "cause": "Streptococcus pyogenes (bacteriana), vírus (Epstein-Barr, adenovírus), fatores imunológicos.",
+        "symptoms": ["Dor de garganta intensa", "febre", "disfagia", "aumento de volume das amígdalas", "exsudato purulento", "halitose"],
+        "prevent": "Evitar contato com pessoas infectadas, boa higiene oral.",
+        "cure_way": ["Sintomáticos", "antibióticos (se bacteriana)", "anti-inflamatórios", "amigdalectomia (casos recorrentes ou complicados)"],
+        "categoryTag": "garganta",
+        "categoryLabel": "Garganta/Faringe"
+    },
+    {
+        "id": "laringite",
+        "name": "Laringite",
+        "desc": "Inflamação da laringe, afetando as pregas vocais, podendo ser aguda (infecciosa) ou crônica (por abuso vocal, refluxo).",
+        "cause": "Infecções virais, uso excessivo da voz, exposição a irritantes (fumo, produtos químicos), refluxo laringofaríngeo.",
+        "symptoms": ["Rouquidão", "afonia", "dor ao falar", "tosse seca", "sensação de 'bola' na garganta"],
+        "prevent": "Evitar irritantes, hidratar-se, repouso vocal em episódios agudos.",
+        "cure_way": ["Repouso vocal", "hidratação", "anti-inflamatórios", "corticosteroides inalados", "tratamento do refluxo (se presente)"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "paralisia-pregas-vocais",
+        "name": "Paralisia de pregas vocais",
+        "desc": "Disfunção da inervação dos músculos intrínsecos da laringe, resultando em imobilidade uni ou bilateral das pregas vocais.",
+        "cause": "Lesões do nervo laríngeo recorrente (cirurgias de tireoide, neoplasias), trauma cervical, doenças neurológicas, idiopática.",
+        "symptoms": ["Rouquidão", "voz soprosa", "dispneia (se bilateral)", "disfagia", "tosse ineficaz"],
+        "prevent": "Cuidados cirúrgicos (evitar lesão do nervo), tratamento precoce de causas subjacentes.",
+        "cure_way": ["Fonoterapia", "injeção de materiais de preenchimento nas pregas vocais", "tireoplastia", "reabilitação cirúrgica"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "tumor-laringe",
+        "name": "Tumor de laringe",
+        "desc": "Neoplasias benignas (pólipos, nódulos, papilomas) ou malignas (carcinoma espinocelular) que acometem a laringe.",
+        "cause": "Tabagismo, etilismo, infecção por HPV, exposição a agentes carcinogênicos.",
+        "symptoms": ["Rouquidão persistente", "disfagia", "dor de garganta", "dispneia", "otalgia reflexa", "hemoptise"],
+        "prevent": "Evitar tabaco e álcool, vacinação contra HPV, diagnóstico precoce.",
+        "cure_way": ["Cirurgia (endoscópica ou aberta)", "radioterapia", "quimioterapia", "fonoterapia"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "corpo-estranho-vias-aereas",
+        "name": "Corpo estranho em vias aéreas",
+        "desc": "Aspiração de objetos sólidos ou líquidos que se alojam na laringe, traqueia ou brônquios, causando obstrução parcial ou total.",
+        "cause": "Mais comum em crianças (brinquedos pequenos, alimentos) e idosos (próteses dentárias).",
+        "symptoms": ["Tosse súbita", "engasgo", "sibilo", "dispneia", "cianose", "asfixia (se obstrução completa)"],
+        "prevent": "Supervisão de crianças, evitar oferecer alimentos de risco, cuidados com próteses dentárias.",
+        "cure_way": ["Remoção por broncoscopia rígida ou flexível (emergência)", "manobra de Heimlich"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "tumor-traqueia",
+        "name": "Tumor de traqueia",
+        "desc": "Neoplasias primárias ou metastáticas que afetam a traqueia, podendo causar obstrução das vias aéreas.",
+        "cause": "Tabagismo, fatores genéticos, exposição ocupacional a carcinógenos.",
+        "symptoms": ["Dispneia progressiva", "estridor", "tosse", "hemoptise", "rouquidão (se extensão laríngea)"],
+        "prevent": "Evitar tabaco, diagnóstico precoce de lesões suspeitas.",
+        "cure_way": ["Ressecção cirúrgica", "radioterapia", "stent traqueal", "laserterapia"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "laringomalacia",
+        "name": "Laringomalácia",
+        "desc": "Anomalia congênita caracterizada pela flacidez das estruturas supraglóticas, causando obstrução inspiratória em lactentes.",
+        "cause": "Imaturidade da cartilagem laríngea, fatores genéticos.",
+        "symptoms": ["Estridor inspiratório (piora com alimentação, choro, decúbito dorsal)", "dificuldade alimentar", "apneia (em casos graves)"],
+        "prevent": "Não há prevenção específica; acompanhamento pediátrico.",
+        "cure_way": ["Observação (resolução espontânea até 2 anos)", "supraglotoplastia (casos graves)"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "otite-media",
+        "name": "Otite média",
+        "desc": "Inflamação da orelha média, geralmente infecciosa, podendo ser aguda, crônica ou secretora.",
+        "cause": "Infecções virais/bacterianas ascendentes da faringe, disfunção tubária, alergias.",
+        "symptoms": ["Otalgia", "hipoacusia", "febre", "otorreia (se perfuração timpânica)", "sensação de plenitude auricular"],
+        "prevent": "Aleitamento materno, vacinação (pneumococo, influenza), evitar exposição ao fumo.",
+        "cure_way": ["Antibióticos (se bacteriana)", "analgésicos", "corticosteroides", "miringotomia com colocação de tubo de ventilação (casos recorrentes)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "otite-externa",
+        "name": "Otite externa",
+        "desc": "Inflamação do conduto auditivo externo, geralmente bacteriana (Pseudomonas, Staphylococcus) ou fúngica.",
+        "cause": "Exposição à água (ouvido de nadador), manipulação (cotonetes), dermatites, uso de próteses auditivas.",
+        "symptoms": ["Otalgia intensa (piora ao tocar o pavilhão)", "prurido", "otorreia", "edema do conduto"],
+        "prevent": "Secar bem os ouvidos após banho/natação, evitar cotonetes, tratar dermatoses.",
+        "cure_way": ["Gotas otológicas antibióticas/corticosteroides", "limpeza do conduto", "analgésicos"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "zumbido",
+        "name": "Zumbido (Tinnitus)",
+        "desc": "Percepção sonora na ausência de estímulo externo, podendo ser subjetivo (mais comum) ou objetivo.",
+        "cause": "Perda auditiva (presbiacusia, trauma acústico), ototóxicos, doenças vasculares, disfunção da ATM, estresse.",
+        "symptoms": ["Ruídos (apito, chiado, pulsação) em um ou ambos os ouvidos", "insônia", "ansiedade"],
+        "prevent": "Evitar exposição a ruídos altos, controlar pressão arterial, evitar ototóxicos.",
+        "cure_way": ["Tratar causa base", "aparelhos auditivos", "terapias de habituação (TRT)", "terapia cognitivo-comportamental", "medicações (casos selecionados)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "vertigem",
+        "name": "Vertigem",
+        "desc": "Sensação de movimento rotatório, geralmente associada a disfunção do sistema vestibular (periférico ou central).",
+        "cause": "Vertigem posicional paroxística benigna (VPPB), doença de Ménière, neurite vestibular, enxaqueca vestibular, isquemia cerebral.",
+        "symptoms": ["Sensação de rotação", "desequilíbrio", "náuseas", "vômitos", "nistagmo"],
+        "prevent": "Evitar movimentos bruscos, controlar fatores de risco cardiovascular, tratar crises.",
+        "cure_way": ["Manobras de reposição (VPPB)", "medicamentos antivertiginosos", "reabilitação vestibular", "dieta hipossódica (Ménière)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "otosclerose",
+        "name": "Otosclerose",
+        "desc": "Doença hereditária que causa fixação do estribo na janela oval, levando a perda auditiva condutiva progressiva.",
+        "cause": "Fatores genéticos (autossômica dominante), possivelmente influência hormonal (piora na gravidez).",
+        "symptoms": ["Perda auditiva lentamente progressiva", "zumbido", "vertigem (em alguns casos)"],
+        "prevent": "Não há prevenção conhecida; acompanhamento audiológico.",
+        "cure_way": ["Prótese auditiva", "estapedotomia cirúrgica", "implante coclear (casos avançados)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca-menieres",
+        "name": "Doença de Ménière",
+        "desc": "Distúrbio do ouvido interno caracterizado por crises recorrentes de vertigem, perda auditiva flutuante, zumbido e plenitude auricular.",
+        "cause": "Hidropsia endolinfática (aumento de pressão do líquido labiríntico), etiologia incerta.",
+        "symptoms": ["Vertigem rotatória intensa (minutos a horas)", "flutuação auditiva", "zumbido", "sensação de ouvido cheio"],
+        "prevent": "Dieta hipossódica, evitar cafeína/álcool, tratar crises agudas.",
+        "cure_way": ["Diuréticos", "corticosteroides", "terapia de pressão", "injeção intratimpânica de gentamicina (ablação vestibular)", "cirurgia descompressiva"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "perda-auditiva",
+        "name": "Perda auditiva (Hipoacusia)",
+        "desc": "Diminuição da capacidade auditiva, podendo ser condutiva, neurossensorial ou mista; congênita ou adquirida.",
+        "cause": "Genéticas, infecções congênitas (rubéola, CMV), exposição a ruído, ototóxicos, envelhecimento (presbiacusia), traumatismos.",
+        "symptoms": ["Dificuldade de compreensão da fala", "isolamento social", "zumbido", "vertigem (em alguns casos)"],
+        "prevent": "Evitar ruído excessivo, uso de protetores auriculares, vacinação, tratamento precoce de infecções.",
+        "cure_way": ["Aparelhos auditivos", "implante coclear", "reabilitação auditiva", "tratamento da causa base"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "polipo-prega-vocal",
+        "name": "Pólipo de prega vocal",
+        "desc": "Lesão benigna da prega vocal, geralmente decorrente de trauma vocal agudo ou crônico (abuso vocal).",
+        "cause": "Esforço vocal intenso (gritar, falar muito), refluxo laringofaríngeo, irritantes (fumo).",
+        "symptoms": ["Rouquidão persistente", "voz bitonal", "fadiga vocal", "falhas na voz"],
+        "prevent": "Técnica vocal adequada, hidratação, evitar abuso vocal.",
+        "cure_way": ["Fonoterapia", "microcirurgia laríngea (laringoscopia de suspensão)"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    },
+    {
+        "id": "papilomatose-laringea",
+        "name": "Papilomatose laríngea",
+        "desc": "Doença causada pelo HPV (tipos 6 e 11), caracterizada por múltiplos papilomas na laringe, podendo causar obstrução e rouquidão.",
+        "cause": "Infecção por HPV, transmissão vertical (parto) em crianças.",
+        "symptoms": ["Rouquidão progressiva", "estridor", "dispneia", "tosse crônica"],
+        "prevent": "Vacinação contra HPV, evitar contato direto com lesões.",
+        "cure_way": ["Ressecção cirúrgica (microcirurgia, laser)", "uso de antivirais (cidofovir)", "acompanhamento devido à recorrência"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
+    }
+];
