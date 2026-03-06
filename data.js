@@ -604,5 +604,172 @@ window.diseaseData = [
         "cure_way": ["Antibióticos", "suporte respiratório", "fisioterapia respiratória", "tratamento da causa base"],
         "categoryTag": "garganta",
         "categoryLabel": "Garganta/Faringe"
+    },
+
+        {
+        "id": "doenca36",
+        "name": "Neurinoma do acústico",
+        "desc": "Tumor benigno de crescimento lento que se desenvolve no nervo vestibulococlear (VIII par craniano), responsável pela audição e equilíbrio.",
+        "cause": "Fatores genéticos (associação com neurofibromatose tipo 2), na maioria dos casos é esporádico.",
+        "symptoms": ["Perda auditiva neurossensorial unilateral progressiva", "zumbido", "vertigem ou desequilíbrio", "sensação de plenitude auricular", "em casos avançados, dormência facial ou fraqueza"],
+        "prevent": "Não há prevenção conhecida, mas diagnóstico precoce melhora o prognóstico.",
+        "cure_way": ["Observação em tumores pequenos e assintomáticos", "cirurgia (microcirurgia ou cirurgia estereotáxica)", "radiocirurgia (Gamma Knife)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca37",
+        "name": "Colesteatoma",
+        "desc": "Acúmulo de células epiteliais queratinizadas no ouvido médio ou processo mastoide, geralmente secundário a disfunção da tuba auditiva ou perfuração timpânica.",
+        "cause": "Otite média crônica, disfunção da tuba auditiva, retração da membrana timpânica, congênito (raro).",
+        "symptoms": ["Otorreia crônica (geralmente fétida)", "perda auditiva condutiva", "otalgia", "sensação de plenitude auricular", "vertigem (se erosão do labirinto)", "paralisia facial (em casos avançados)"],
+        "prevent": "Tratar adequadamente otites médias, acompanhamento otorrinolaringológico regular.",
+        "cure_way": ["Cirurgia (mastoidectomia, timpanoplastia)", "limpeza cirúrgica", "reconstrução ossicular"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca38",
+        "name": "Labirintite",
+        "desc": "Inflamação do labirinto (ouvido interno), geralmente de origem viral ou bacteriana, que afeta a audição e o equilíbrio.",
+        "cause": "Infecções virais (gripe, sarampo, caxumba), infecções bacterianas (otite média complicada), autoimune, traumática.",
+        "symptoms": ["Vertigem intensa e súbita", "náuseas e vômitos", "nistagmo", "perda auditiva neurossensorial", "zumbido", "desequilíbrio"],
+        "prevent": "Tratar prontamente infecções de ouvido e vias aéreas superiores, vacinação.",
+        "cure_way": ["Antibióticos (se bacteriana)", "corticosteroides", "antivertiginosos", "anti-histamínicos", "repouso", "reabilitação vestibular"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca39",
+        "name": "Perfuração da membrana timpânica",
+        "desc": "Ruptura do tímpano, podendo ser traumática ou secundária a infecções.",
+        "cause": "Trauma (cotonetes, barotrauma, objetos pontiagudos), otite média aguda, otite média crônica, explosões.",
+        "symptoms": ["Otalgia súbita (pode melhorar após perfuração)", "otorreia (se infeccionada)", "perda auditiva condutiva", "zumbido", "vertigem (raro)"],
+        "prevent": "Evitar introduzir objetos no ouvido, tratar infecções otológicas adequadamente, proteger ouvidos em ambientes de pressão.",
+        "cure_way": ["Observação (maioria cicatriza espontaneamente)", "antibióticos se infeccionado", "timpanoplastia cirúrgica (se não cicatrizar)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca40",
+        "name": "Otite média secretora",
+        "desc": "Presença de líquido no ouvido médio sem sinais de infecção aguda, geralmente secundária a disfunção da tuba auditiva.",
+        "cause": "Disfunção tubária (hipertrofia de adenoides, rinites, sinusites, barotrauma), alergias, refluxo.",
+        "symptoms": ["Hipoacusia leve a moderada", "sensação de ouvido cheio", "atraso na fala em crianças", "autofonia", "tontura ocasional"],
+        "prevent": "Tratar alergias e rinites, evitar exposição ao fumo, amamentação no primeiro ano de vida.",
+        "cure_way": ["Observação (resolução espontânea em semanas)", "corticosteroides nasais", "miringotomia com colocação de tubo de ventilação", "adenoidectomia se indicada"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca41",
+        "name": "Paralisia facial periférica (Paralisia de Bell)",
+        "desc": "Paralisia súbita do nervo facial (VII par), geralmente unilateral, de causa idiopática, mas pode estar associada a infecções virais ou outras condições.",
+        "cause": "Provavelmente viral (herpes simples), inflamação do nervo facial, pode ocorrer em otites, tumores, trauma.",
+        "symptoms": ["Fraqueza ou paralisia dos músculos da face", "dificuldade para fechar o olho", "desvio da boca", "diminuição do paladar", "hiperacusia", "dor atrás da orelha"],
+        "prevent": "Não há prevenção específica, mas tratar infecções otológicas pode reduzir risco.",
+        "cure_way": ["Corticosteroides", "antivirais (se viral)", "proteção ocular (lágrimas artificiais, tampão)", "fisioterapia facial", "cirurgia descompressiva (casos selecionados)"],
+        "categoryTag": "ouvido",
+        "categoryLabel": "Ouvido"
+    },
+    {
+        "id": "doenca42",
+        "name": "Abscesso periamigdaliano",
+        "desc": "Coleção purulenta localizada no espaço entre a amígdala palatina e a parede faríngea, geralmente complicação de amigdalite bacteriana.",
+        "cause": "Infecção bacteriana (Streptococcus pyogenes, anaeróbios), amigdalite recorrente ou mal tratada.",
+        "symptoms": ["Dor de garganta intensa e unilateral", "disfagia", "trismo (dificuldade de abrir a boca)", "febre alta", "voz de batata quente", "otalgia reflexa", "desvio da úvula para o lado contralateral"],
+        "prevent": "Tratar adequadamente amigdalites, evitar tabagismo.",
+        "cure_way": ["Drenagem cirúrgica (punção ou incisão)", "antibióticos de amplo espectro", "analgésicos e anti-inflamatórios", "amigdalectomia (após resolução ou em casos recorrentes)"],
+        "categoryTag": "garganta",
+        "categoryLabel": "Garganta/Faringe"
+    },
+    {
+        "id": "doenca43",
+        "name": "Abscesso retrofaríngeo",
+        "desc": "Infecção profunda do espaço retrofaríngeo, mais comum em crianças pequenas, podendo causar obstrução das vias aéreas.",
+        "cause": "Infecções bacterianas (Streptococcus, Staphylococcus, anaeróbios), frequentemente secundárias a faringite ou trauma.",
+        "symptoms": ["Febre alta", "disfagia", "dor cervical", "rigidez de nuca", "estridor", "dispneia", "postura em hiperextensão cervical"],
+        "prevent": "Tratar precocemente infecções de vias aéreas superiores.",
+        "cure_way": ["Drenagem cirúrgica (via cervical ou intraoral)", "antibióticos intravenosos", "suporte respiratório"],
+        "categoryTag": "garganta",
+        "categoryLabel": "Garganta/Faringe"
+    },
+    {
+        "id": "doenca44",
+        "name": "Sialolitíase",
+        "desc": "Formação de cálculos (pedras) nas glândulas salivares ou seus ductos, mais comum na glândula submandibular.",
+        "cause": "Acúmulo de sais de cálcio ao redor de debris celulares, estase salivar, desidratação, traumatismos.",
+        "symptoms": ["Dor e inchaço na glândula afetada (piora durante as refeições)", "diminuição do fluxo salivar", "infecção secundária (sialadenite)", "halitose", "gosto desagradável"],
+        "prevent": "Hidratação adequada, boa higiene oral, estimular fluxo salivar (gomas de mascar, ácido cítrico).",
+        "cure_way": ["Massagem da glândula", "sialogogos", "remoção cirúrgica do cálculo (sialolitotomia)", "sialendoscopia", "antibióticos se infecção"],
+        "categoryTag": "garganta",
+        "categoryLabel": "Garganta/Faringe"
+    },
+    {
+        "id": "doenca45",
+        "name": "Parotidite (Caxumba)",
+        "desc": "Infecção viral aguda das glândulas parótidas, causada pelo paramixovírus, comum na infância.",
+        "cause": "Vírus da caxumba (paramixovírus), transmitido por gotículas respiratórias.",
+        "symptoms": ["Inchaço doloroso bilateral (ou unilateral) das parótidas", "febre", "dor ao mastigar ou engolir", "mal-estar", "cefaleia", "odinofagia"],
+        "prevent": "Vacinação (tríplice viral – sarampo, caxumba, rubéola).",
+        "cure_way": ["Tratamento sintomático", "analgésicos", "antitérmicos", "hidratação", "repouso", "compressas mornas"],
+        "categoryTag": "garganta",
+        "categoryLabel": "Garganta/Faringe"
+    },
+    {
+        "id": "doenca46",
+        "name": "Hipertrofia de adenoides",
+        "desc": "Aumento do tecido linfoide da tonsila faríngea (adenoide), comum em crianças, podendo obstruir a via aérea nasal e a tuba auditiva.",
+        "cause": "Infecções recorrentes, alergias, fatores genéticos.",
+        "symptoms": ["Obstrução nasal crônica", "respiração bucal", "ronco", "apneia do sono", "otite média secretora", "hiponasalidade", "fácies adenoideana"],
+        "prevent": "Tratar precocemente infecções respiratórias, evitar alérgenos.",
+        "cure_way": ["Corticosteroides nasais", "antibióticos (se infeccionado)", "adenoidectomia cirúrgica (casos graves ou refratários)"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "doenca47",
+        "name": "Pólipo nasal",
+        "desc": "Lesões benignas, arredondadas e edematosas da mucosa nasal e seios paranasais, associadas a inflamação crônica.",
+        "cause": "Rinite alérgica, asma, fibrose cística, sinusite crônica, intolerância a AAS.",
+        "symptoms": ["Obstrução nasal progressiva", "hiposmia ou anosmia", "rinorreia anterior e posterior", "cefaleia", "pressão facial", "ronco"],
+        "prevent": "Controlar doenças de base (alergia, asma), uso de corticosteroides nasais.",
+        "cure_way": ["Corticosteroides nasais ou sistêmicos", "cirurgia (polipectomia, sinusectomia)"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "doenca48",
+        "name": "Desvio de septo nasal",
+        "desc": "Desvio da parede medial do nariz (septo nasal), podendo causar obstrução nasal e outros sintomas.",
+        "cause": "Trauma nasal, desenvolvimento anormal, genético.",
+        "symptoms": ["Obstrução nasal unilateral ou bilateral", "respiração bucal", "ronco", "cefaleia", "epistaxe", "sinusite de repetição"],
+        "prevent": "Prevenir traumas nasais (uso de cinto de segurança, proteção em esportes).",
+        "cure_way": ["Tratamento clínico dos sintomas (corticosteroides nasais)", "cirurgia (septoplastia) se sintomas significativos"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "doenca49",
+        "name": "Corpo estranho nasal",
+        "desc": "Objeto alojado na cavidade nasal, comum em crianças, podendo causar obstrução, infecção e halitose.",
+        "cause": "Crianças introduzindo objetos (contas, feijões, brinquedos pequenos).",
+        "symptoms": ["Obstrução nasal unilateral", "rinorreia purulenta unilateral", "halitose", "epistaxe", "dor facial"],
+        "prevent": "Supervisão de crianças, manter objetos pequenos fora do alcance.",
+        "cure_way": ["Remoção do corpo estranho (pinça, aspirador, cateter de Fogarty)", "antibióticos se infecção secundária"],
+        "categoryTag": "nariz",
+        "categoryLabel": "Nariz"
+    },
+    {
+        "id": "doenca50",
+        "name": "Disfonia (Distúrbios da voz)",
+        "desc": "Alteração na qualidade vocal devido a problemas nas pregas vocais ou estruturas associadas.",
+        "cause": "Nódulos vocais, pólipos, edema de Reinke, paralisia de pregas, laringite crônica, câncer, refluxo.",
+        "symptoms": ["Rouquidão", "voz soprosa", "voz bitonal", "fadiga vocal", "falhas na voz", "esforço para falar"],
+        "prevent": "Evitar abuso vocal, hidratação adequada, não fumar, tratar refluxo.",
+        "cure_way": ["Fonoterapia", "repouso vocal", "tratamento da causa base", "microcirurgia laríngea (nódulos, pólipos)", "injeção de materiais em pregas"],
+        "categoryTag": "laringe",
+        "categoryLabel": "Laringe"
     }
 ];
+
